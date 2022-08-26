@@ -7,7 +7,7 @@ const char* ssid = "vivo 1716";
 const char* password = "pipipipi";
 
 // Change the variable to your Raspberry Pi IP address, so it connects to your MQTT broker
-const char* mqtt_server = "192.168.10.4";
+const char* mqtt_server = "192.168.10.4";//// you can add server id as well or localhost it will work 
 
 
 const int trigPin = 4;
