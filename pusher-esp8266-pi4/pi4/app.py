@@ -4,9 +4,9 @@ import pusher
 import time
 
 pusher_client = pusher.Pusher(
-  app_id='1262894',
-  key='c36ff86c1ec4ca2d7167',
-  secret='a3d491e6e3b342777300',
+  app_id='*******',
+  key='*********',
+  secret='******your key ******777300',
   cluster='ap2',
   ssl=True,
 );
