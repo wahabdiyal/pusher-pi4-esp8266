@@ -1,0 +1,40 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MQTT Hr</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  setInterval(function() {
+    var date = new Date();
+    $('#clock').html(
+        date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds()
+        );
+    $.ajax({
+        url: "meow",
+        success: function(data) {
+        console.log(data);
+          $("#hc").html(data.response);
+
+        }
+      });
+
+
+}, 500);
+});
+</script>
+</head>
+<body>
+<div id='clock'></div>
+<div id='hc'></div>
+   <h1>Welcome to FlaskBlog{{redi}}</h1>
+</body>
+</html>
+
+
+
+
+
